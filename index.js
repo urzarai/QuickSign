@@ -71,7 +71,7 @@ saveButton.addEventListener('click', () => {
 retrieveButton.addEventListener('click', () => {
     let savedCanvas = localStorage.getItem('canvasContents');
 
-    if(savedCanvad){
+    if(savedCanvas){
         let img = new Image();
         img.src = savedCanvas;
         ctx.drawImage(img, 0, 0);
